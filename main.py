@@ -63,8 +63,8 @@ for row in range(1, len(sheet_data)):
             print('---------------------------')
 
             # Update sheet with most recent price from query
-            data_range = f"prices!D{row + 1}:E{row+1}"
-            prices.put_sheet_data(data_range, [[flight_data.price,today.strftime('%m/%d/%Y')]])
+            data_range = f"prices!D{row + 1}:E{row + 1}"
+            prices.put_sheet_data(data_range, [[flight_data.price, today.strftime('%m/%d/%Y')]])
             # Update the new low trigger price if the flag is set
             if UPDATE_TRIGGER_PRICE:
                 if flight_data.price < int(trigger_price):
