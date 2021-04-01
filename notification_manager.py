@@ -14,7 +14,7 @@ class NotificationManager:
     def __init__(self):
 
         self.msg_from = '+13058512291'
-        self.msg_to = '+14793010215'
+        self.msg_to = '+15551234567'
         self.client = Client(account_sid, auth_token)
 
     def send_notification(self, price, from_city, from_code, to_city, to_code, leave_date,
